@@ -13,6 +13,8 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 
 const authRoutes = require("./routes/authRoutes");
+const expenseRoutes = require("./routes/expenseRoutes");
+
 
 const app = express();
 
@@ -22,12 +24,15 @@ app.use(express.json());  // lets the server read JSON sent by the user
 
 // Test route: opening http://localhost:5000 shows this message
 app.get("/", (req, res) => {
-  res.send("API running");
+  res.send("API Running");
 });
+
+
 
 // Every route in authRoutes.js starts with /api/auth
 // Example: /register becomes /api/auth/register
 app.use("/api/auth", authRoutes);
+app.use("/api/expenses",expenseRoutes);
 
 // Hosting sites give their own port, so use theirs if it exists
 const PORT = process.env.PORT || 5000;
