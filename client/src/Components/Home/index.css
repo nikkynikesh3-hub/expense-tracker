@@ -1,0 +1,170 @@
+.home-main-bg {
+  min-height: 100vh;
+  max-height: 130vh;
+  background-color: #f5f7fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hm-sub-main-contaier {
+  background-color: transparent;
+  width: 90%;
+  margin: 5px;
+  min-height: 560px;
+  max-height: 650px;
+  padding: 5px;
+}
+
+.hm-title-lgtbtn-card {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.hm-title {
+  color: rgb(23, 119, 229);
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+}
+
+.hm-span-title {
+  color: rgb(16, 153, 16);
+}
+
+.hm-lgt-btn {
+  background-color: #f5f7fa;
+  height: 38px;
+  width: 80px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #121111;
+  border: 1px solid #6b7280;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+/* ===== The white card ===== */
+.total-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  font-family: "Inter", sans-serif;
+}
+
+/* Small grey text on top */
+.total-label {
+  font-size: 12px;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* The big number */
+.total-amount {
+  font-size: 26px;
+  font-weight: 700;
+  color: #111827;
+  margin: 2px 0;
+}
+
+/* Small grey text at the bottom */
+.total-count {
+  font-size: 12px;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* ===== The white card ===== */
+.add-expense-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 12px;
+  font-family: "Inter", sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-expense-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 10px;
+}
+
+/* ===== One label + one input ===== */
+.add-field {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0; /* stops the field from overflowing in a row */
+  margin-bottom: 10px;
+}
+
+.add-row {
+  display: flex;
+  gap: 10px;
+}
+
+.add-label {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+/* ===== Input and dropdown ===== */
+.add-input,
+.add-select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 9px 10px;
+  font-size: 13px;
+  font-family: inherit; /* copy the page font */
+  color: #111827;
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.add-input::placeholder {
+  color: #9ca3af;
+}
+
+/* When the user clicks inside */
+.add-input:focus,
+.add-select:focus {
+  border-color: #2e7d32;
+  box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.15);
+}
+
+/* ===== Green button ===== */
+.add-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: inherit;
+  color: #ffffff;
+  background-color: #55a95a;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-button:hover {
+  background-color: #4a9a4f;
+}

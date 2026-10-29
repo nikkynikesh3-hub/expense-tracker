@@ -96,7 +96,7 @@ router.put("/:id", async (req, res) => {
       return res.status(404).json({ message: "Expense not found" });
     }
 
-    res.json("Expense Updated Successfully",expense);
+    res.json(expense);
   } catch (error) {
     if (error.name === "ValidationError") {
       return res.status(400).json({ message: error.message });
